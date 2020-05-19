@@ -27,7 +27,8 @@ def mohr_circle(norm1,nrm2,shear):
     p=([n1,n1,n2,n2,n2])
     b=([0,t,-t,0,0])
     ax=plt.axes()
-    ax.plot(w,w*0)
+    ax.plot(w,w*0)# this plots x axis
+
     plt.plot(p,b,x,y)
     plt.xlabel(r"$\sigma$")
     plt.ylabel(r"$\tau$")
