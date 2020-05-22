@@ -28,7 +28,10 @@ def mohr_circle(norm1,nrm2,shear):
     b=([0,t,-t,0,0])
     ax=plt.axes()
     ax.plot(w,w*0)# this plots x axis
-
+    prin1=n_max + np.sqrt(n_min**2 +t**2)
+    prin2=n_max- np.sqrt(n_min**2 +t**2)
+    print('Max stress is:', prin1)
+    print('Min stress is :',prin2)
     plt.plot(p,b,x,y)
     plt.xlabel(r"$\sigma$")
     plt.ylabel(r"$\tau$")
